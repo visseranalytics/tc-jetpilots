@@ -77,6 +77,10 @@ import Base from '../layouts/Base.astro'
 
     <!-- ========== EXPERIENCE ========== -->
     <section id="experience" class="relative bg-deep">
+      <!-- Section title: normal flow on mobile, overlays images on md+ -->
+      <div class="relative md:absolute md:top-0 md:left-0 md:right-0 z-20 text-center py-6 md:pt-24 md:pb-0 pointer-events-none">
+        <h2 class="font-display text-4xl md:text-6xl text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]">THIS IS THE SORTIE</h2>
+      </div>
       <!-- Full-width 4-column row -->
       <div class="relative overflow-hidden">
         <!-- Wave clipping the top of the images -->
@@ -84,10 +88,6 @@ import Base from '../layouts/Base.astro'
           <svg viewBox="0 0 1440 80" preserveAspectRatio="none" class="w-full h-[40px] md:h-[80px]">
             <path d="M0,40 C360,80 720,10 1080,50 C1260,65 1380,30 1440,40 L1440,0 L0,0 Z" fill="#0b1426" />
           </svg>
-        </div>
-        <!-- Section title overlay -->
-        <div class="relative md:absolute md:top-0 md:left-0 md:right-0 z-20 text-center py-6 md:pt-24 md:pb-0 pointer-events-none">
-          <h2 class="font-display text-4xl md:text-6xl text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.5)]">THIS IS THE SORTIE</h2>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 min-h-[60vh] md:min-h-[70vh]">
           <!-- Riding -->
