@@ -30,6 +30,7 @@ const {
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
   <body>
@@ -38,6 +39,8 @@ const {
     <slot />
 
     <Footer />
+
+    <script is:inline src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- ========== SCRIPTS ========== -->
     <script>
@@ -78,6 +81,69 @@ const {
       );
 
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Gallery lightbox
+      const galleryItems = document.querySelectorAll('#gallery .gallery-item');
+      const lightbox = document.getElementById('gallery-lightbox');
+      const lightboxSlides = document.getElementById('lightbox-slides');
+      const lightboxClose = document.getElementById('lightbox-close');
+      let lightboxSwiper = null;
+
+      if (lightbox && lightboxSlides) {
+        // Build slides from gallery images
+        galleryItems.forEach((item, i) => {
+          const img = item.querySelector('img');
+          if (!img) return;
+          const slide = document.createElement('div');
+          slide.className = 'swiper-slide';
+          slide.innerHTML = `<img src="${img.src}" alt="${img.alt}" loading="lazy" />`;
+          lightboxSlides.appendChild(slide);
+
+          item.style.cursor = 'pointer';
+          item.addEventListener('click', () => openLightbox(i));
+        });
+
+        function openLightbox(index) {
+          lightbox.classList.add('active');
+          document.body.classList.add('lightbox-open');
+
+          if (!lightboxSwiper) {
+            lightboxSwiper = new Swiper('.lightbox-swiper', {
+              initialSlide: index,
+              slidesPerView: 1,
+              spaceBetween: 20,
+              keyboard: { enabled: true },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+              },
+            });
+          } else {
+            lightboxSwiper.slideTo(index, 0);
+          }
+        }
+
+        function closeLightbox() {
+          lightbox.classList.remove('active');
+          document.body.classList.remove('lightbox-open');
+        }
+
+        lightboxClose?.addEventListener('click', closeLightbox);
+
+        lightbox.addEventListener('click', (e) => {
+          const isNav = e.target.closest('.swiper-button-prev, .swiper-button-next, .swiper-pagination');
+          const isImage = e.target.tagName === 'IMG';
+          if (!isNav && !isImage) closeLightbox();
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+        });
+      }
     </script>
   </body>
 </html>

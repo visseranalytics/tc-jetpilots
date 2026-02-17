@@ -420,6 +420,17 @@ import Base from '../layouts/Base.astro'
           </div>
         </div>
 
+        <!-- Lightbox -->
+        <div id="gallery-lightbox" class="lightbox-overlay">
+          <button id="lightbox-close" class="lightbox-close" aria-label="Close lightbox">&times;</button>
+          <div class="swiper lightbox-swiper">
+            <div class="swiper-wrapper" id="lightbox-slides"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
         <!-- Videos -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mt-3 md:mt-4">
           <div class="reveal rounded-2xl overflow-hidden">

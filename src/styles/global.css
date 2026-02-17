@@ -115,6 +115,66 @@ body {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
 }
 
+/* Lightbox overlay */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.lightbox-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  z-index: 110;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.5rem;
+  transition: opacity 0.2s;
+}
+.lightbox-close:hover {
+  opacity: 0.7;
+}
+.lightbox-swiper {
+  width: 100%;
+  height: 100%;
+}
+.lightbox-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lightbox-swiper .swiper-slide img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+.lightbox-swiper .swiper-button-prev,
+.lightbox-swiper .swiper-button-next {
+  color: white;
+}
+.lightbox-swiper .swiper-pagination-bullet {
+  background: white;
+}
+body.lightbox-open {
+  overflow: hidden;
+}
+
 /* Gallery image hover */
 .gallery-item img {
   transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), filter 0.5s ease;
