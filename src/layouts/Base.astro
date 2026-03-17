@@ -17,7 +17,7 @@ const {
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="/twin-cities-jet-pilots-white-logo.jpg" />
+    <link rel="icon" href="/tcjp-sortie-2026-logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta property="og:title" content={title} />
@@ -81,6 +81,33 @@ const {
       );
 
       document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      // Active nav link based on scroll position
+      const navLinks = document.querySelectorAll('#main-nav a[href^="/#"]');
+      const sections = document.querySelectorAll('section[id]');
+
+      const sectionObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const id = entry.target.id;
+              navLinks.forEach(link => {
+                if (link.classList.contains('rounded-full')) return;
+                const href = link.getAttribute('href');
+                if (href === `/#${id}`) {
+                  link.classList.add('nav-active');
+                  link.classList.remove('text-slate-300');
+                } else {
+                  link.classList.remove('nav-active');
+                  link.classList.add('text-slate-300');
+                }
+              });
+            }
+          });
+        },
+        { threshold: 0, rootMargin: '-50% 0px -50% 0px' }
+      );
+      sections.forEach(s => sectionObserver.observe(s));
 
       // Gallery lightbox
       const galleryItems = document.querySelectorAll('#gallery .gallery-item');

@@ -3,13 +3,13 @@
 @theme {
   --font-display: "Bebas Neue", sans-serif;
   --font-body: "Barlow", sans-serif;
-  --color-deep: #050d1a;
-  --color-navy: #0b1426;
-  --color-midnight: #0f1d32;
-  --color-storm: #162742;
-  --color-flame: #ff6b35;
-  --color-sunset: #ff8c42;
-  --color-gold: #fbbf24;
+  --color-deep: #080810;
+  --color-navy: #0c0c1a;
+  --color-midnight: #121220;
+  --color-storm: #1a1a2e;
+  --color-flame: #cc0000;
+  --color-sunset: #e60000;
+  --color-gold: #3355dd;
 }
 
 html {
@@ -74,9 +74,9 @@ body {
   background: linear-gradient(
     135deg,
     var(--color-deep) 0%,
-    #0a1e3d 25%,
-    #0c2340 50%,
-    #091a30 75%,
+    #0e0e1e 25%,
+    #111124 50%,
+    #0a0a16 75%,
     var(--color-deep) 100%
   );
   background-size: 400% 400%;
@@ -85,8 +85,8 @@ body {
 
 /* Glow pulse for CTA */
 @keyframes glow-pulse {
-  0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 53, 0.3), 0 0 60px rgba(255, 107, 53, 0.1); }
-  50% { box-shadow: 0 0 30px rgba(255, 107, 53, 0.5), 0 0 80px rgba(255, 107, 53, 0.2); }
+  0%, 100% { box-shadow: 0 0 20px rgba(204, 0, 0, 0.3), 0 0 60px rgba(204, 0, 0, 0.1); }
+  50% { box-shadow: 0 0 30px rgba(204, 0, 0, 0.5), 0 0 80px rgba(204, 0, 0, 0.2); }
 }
 
 .btn-glow {
@@ -109,7 +109,7 @@ body {
   transition: background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
 }
 .nav-glass.scrolled {
-  background: rgba(5, 13, 26, 0.85);
+  background: rgba(8, 8, 16, 0.9);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
@@ -193,6 +193,22 @@ body.lightbox-open {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+/* Active nav link */
+#main-nav a.nav-active {
+  color: white;
+  position: relative;
+}
+#main-nav a.nav-active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #cc0000;
+  border-radius: 1px;
+}
+
 /* Water shimmer for text */
 @keyframes shimmer {
   0% { background-position: -200% center; }
@@ -200,10 +216,10 @@ body.lightbox-open {
 }
 
 .text-shimmer {
-  background: linear-gradient(90deg, #22d3ee, #67e8f9, #a5f3fc, #67e8f9, #22d3ee);
+  background: linear-gradient(90deg, #cc0000, #ff3333, #ffffff, #3355dd, #cc0000);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shimmer 4s linear infinite;
+  animation: shimmer 12s linear infinite;
 }
