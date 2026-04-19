@@ -41,7 +41,11 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   </head>
 
-  <body>
+  <body class="is-loading">
+    <div id="page-loader" aria-hidden="true">
+      <img src="/tcjp-sortie-2026-logo.png" alt="" />
+    </div>
+
     <Header />
 
     <slot />
@@ -52,6 +56,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 
     <!-- ========== SCRIPTS ========== -->
     <script>
+      // Page loader — dismiss once all images/resources finish loading
+      const pageLoader = document.getElementById('page-loader');
+      const dismissLoader = () => {
+        if (!pageLoader || pageLoader.classList.contains('loaded')) return;
+        pageLoader.classList.add('loaded');
+        document.body.classList.remove('is-loading');
+      };
+      if (document.readyState === 'complete') {
+        dismissLoader();
+      } else {
+        window.addEventListener('load', dismissLoader);
+      }
+      // Safety net: dismiss after 8s even if something stalls
+      setTimeout(dismissLoader, 8000);
+
       // Nav scroll effect
       const nav = document.getElementById('main-nav');
       window.addEventListener('scroll', () => {

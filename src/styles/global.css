@@ -25,6 +25,36 @@ body {
   overflow-x: hidden;
 }
 
+/* Page loader — sits above everything until all images finish loading */
+body.is-loading {
+  overflow: hidden;
+}
+#page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--color-deep);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+#page-loader img {
+  width: min(280px, 60vw);
+  height: auto;
+  animation: loader-pulse 1.6s ease-in-out infinite;
+  filter: drop-shadow(0 0 60px rgba(51, 85, 221, 0.45));
+}
+#page-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+@keyframes loader-pulse {
+  0%, 100% { opacity: 0.6; transform: scale(0.98); }
+  50%     { opacity: 1;   transform: scale(1.02); }
+}
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
