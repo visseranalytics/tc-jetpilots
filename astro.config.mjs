@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://tcjetpilots.visseranalytics.com',
+  site: 'https://tcjetpilots.com',
   output: 'static',
   integrations: [sitemap()],
   vite: {
