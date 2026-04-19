@@ -1,6 +1,6 @@
 # The Sortie — TC Jet Pilots
 
-Marketing site for **The Sortie**, the TC Jet Pilots' annual four-day jet ski weekend on Lake Pepin. Live at [tcjetpilots.visseranalytics.com](https://tcjetpilots.visseranalytics.com).
+Marketing site for **The Sortie**, the TC Jet Pilots' annual four-day jet ski weekend on Lake Pepin. Live at [tcjetpilots.com](https://tcjetpilots.com).
 
 ## About TC Jet Pilots
 
