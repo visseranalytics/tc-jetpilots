@@ -7,60 +7,7 @@
   gtag('config', 'G-1K6YHX9KJJ');
 </script>
 
-<!-- Custom GA4 events -->
+<!-- Custom GA4 event tracking -->
 <script>
-  function trackEvent(name: string, params: Record<string, string> = {}) {
-    if (typeof gtag === 'function') gtag('event', name, params);
-  }
-
-  // Facebook links
-  document.querySelectorAll('a[href*="facebook.com"]').forEach(link => {
-    link.addEventListener('click', () => {
-      trackEvent('click_facebook', { link_url: (link as HTMLAnchorElement).href });
-    });
-  });
-
-  // CTA buttons
-  document.querySelectorAll('a[href="#join"], a[href="/#join"]').forEach(link => {
-    link.addEventListener('click', () => {
-      trackEvent('click_cta', { cta_text: link.textContent?.trim() || '' });
-    });
-  });
-
-  // Merch cards
-  document.querySelectorAll('.merch-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const name = card.querySelector('.font-display.text-lg')?.textContent?.trim();
-      trackEvent('click_merch', { item_name: name || '' });
-    });
-  });
-
-  // Gallery image opens
-  document.querySelectorAll('#gallery .gallery-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const alt = item.querySelector('img')?.alt;
-      trackEvent('open_gallery_image', { image: alt || '' });
-    });
-  });
-
-  // Nav link clicks
-  document.querySelectorAll('#main-nav a[href^="/#"]').forEach(link => {
-    link.addEventListener('click', () => {
-      trackEvent('click_nav', { section: link.textContent?.trim() || '' });
-    });
-  });
-
-  // Section views (fires once per section)
-  document.querySelectorAll('section[id]').forEach(section => {
-    const viewObserver = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          trackEvent('view_section', { section: (section as HTMLElement).id });
-          viewObserver.unobserve(section);
-        }
-      },
-      { threshold: 0.3 }
-    );
-    viewObserver.observe(section);
-  });
+  import '../scripts/analytics.ts';
 </script>
