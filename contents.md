@@ -7,7 +7,7 @@
 **Headline:** THE SORTIE
 
 **Body:**
-Four days of riding, camping, and bonfires on Lake Pepin. Join us August 27 to 30 at Hok-Si-La Park in Lake City, Minnesota for the 20th annual Sortie.
+Join us August 27-30 at Hok-Si-La Park in Lake City, Minnesota for the 20th annual Sortie. Four days of riding, camping, and bonfires on Lake Pepin.
 
 **CTAs:** RSVP NOW | JOIN ON FACEBOOK
 
@@ -20,7 +20,7 @@ Four days of riding, camping, and bonfires on Lake Pepin. Join us August 27 to 3
 **Headline:** THE MIDWEST'S BIGGEST JET SKI WEEKEND
 
 **Body:**
-For twenty years, more than a hundred riders and their families have rolled into Hok-Si-La Park on Lake Pepin every August. It's four days of riding, camping, and one of the best weekends of the summer. Everyone's welcome.
+The Sortie has been happening every August for twenty years. More than a hundred riders and their families come out to Hok-Si-La Park on Lake Pepin for four days of riding, camping, and one of the best weekends of the summer. Everyone is welcome.
 
 **Stats:**
 - 20 / Years Running
@@ -32,16 +32,16 @@ For twenty years, more than a hundred riders and their families have rolled into
 ## FEATURE CARDS
 
 ### Open Water Riding
-Lake Pepin is one of the widest stretches of the Mississippi, which means miles of open water and no shortage of room to ride. Expect the buoy course running most days, double-ups behind the boat, and freeride water in every direction.
+Lake Pepin is one of the widest stretches of the Mississippi, so there is plenty of open water to ride. Expect the buoy course running most days, double-ups behind the boat, and miles of freeride.
 
 ### Blufftop Camping
-Section B is reserved for the Sortie crew, right on the bluff looking out over the lake. Campsites include fire rings with cooking grates and free firewood, and hot showers are a short walk away. Sites are $30 per person per night, paid at the park office when you check in.
+Section B is reserved for the Sortie crew, on the bluff above the lake. Campsites have fire rings with cooking grates and free firewood, and the showers are a short walk away. Sites are $30 per person per night, paid at the park office when you check in.
 
 ### Feasts & Fires
-The local Lions Club is handling meals for the weekend, with full menu details coming soon. Every night after dinner the campfire gets going and runs late.
+The local Lions Club is handling meals for the weekend. Full menu details are coming soon. Free firewood is available all weekend, so campfires run late at every site.
 
 ### The Big Raffle
-Every year we raffle off a jet ski to one lucky rider at camp. Tickets are $20, available all weekend, and the winner gets drawn Saturday night after dinner. You have to be present to take it home, so don't head out early.
+Every year we raffle off a jet ski. Tickets are $20, available all weekend, and the winner is drawn Saturday night after dinner. You have to be present to take it home, so don't head out early.
 
 ---
 
@@ -52,16 +52,16 @@ Every year we raffle off a jet ski to one lucky rider at camp. Tickets are $20, 
 **Headline:** FOUR DAYS ON THE WATER
 
 ### Thursday, August 27 — Day One
-Thursday is arrival day, and the crew rolls in all afternoon and evening. Section B fills in the order people show up, so the earlier you get there, the better your pick of campsites and shoreline spots for beaching your ski. Get camp set, get the ski in the water, and catch up with folks you haven't seen since last August.
+Thursday is arrival day. People show up all afternoon and evening. Section B fills up in the order people arrive, so the earlier you get there, the better your pick of campsites and shoreline spots for beaching your ski. Get camp set up, get your ski in the water, and catch up with everyone you haven't seen since last August.
 
 ### Friday, August 28 — Day Two
-Friday is the first full day on the water. The buoy course is set up by mid-morning and freeride runs until dusk. Everyone hits the campfire after dark.
+Friday is the first full day on the water. The buoy course is set up by mid-morning and freeride runs until dusk.
 
 ### Saturday, August 29 — The Main Event
-Saturday is the main event. Full day of riding, the buoy course running all day, and the biggest turnout of the weekend. The Lions Club is serving dinner, and the jet ski raffle is right after. Tickets are $20, winner drawn live, must be present to take it home.
+Saturday is the main event and the biggest turnout of the weekend. Riding and the buoy course run all day. The Lions Club is serving dinner, and the jet ski raffle is right after. Tickets are $20 and you have to be present to win.
 
 ### Sunday, August 30 — Day Four
-Sunday morning is for one last session. The water is usually glass, the crew is smaller, and the riding is some of the best of the weekend. Pack up camp after lunch and head home.
+Sunday is for one last session on the water. It's usually glass in the morning, the crew is smaller, and the riding is some of the best of the weekend. Pack up camp after lunch and head home.
 
 ---
 
@@ -82,15 +82,15 @@ Sunday morning is for one last session. The water is usually glass, the crew is 
 **Headline:** TC JET PILOTS
 
 **Body:**
-We're a crew of jet ski riders based out of the Twin Cities and the official AWA chapter for Minnesota and the surrounding states. It doesn't matter what you ride. Standups, sit-downs, vintage, modern, or a restored project build, you'll fit right in.
+We are a group of jet ski riders based out of the Twin Cities and the official AWA chapter for Minnesota and the surrounding states. It doesn't matter what you ride. Standups, sit-downs, vintage, modern, or a restored project build, you will fit right in.
 
-We ride together all summer, wrench on skis through the winter, and get together the rest of the year for bonfires, road trips, and garage hangs. We plan everything in the Facebook group, so that's where to find us.
+We ride together all summer, wrench on skis through the winter, and get together the rest of the year for bonfires, road trips, and garage hangs. We plan everything in the Facebook group, so that is where to find us.
 
 ### Where We Ride
-Lake Minnetonka and Lake Pepin are the regulars, but the crew rides wherever the water looks good. Check the Facebook group for weekly ride announcements.
+Lake Minnetonka and Lake Pepin are where we ride most often, but we go wherever the water looks good. Check the Facebook group for weekly ride announcements.
 
 ### Join Up
-There's no membership fee and no sign-up form. Join the [Facebook group](https://www.facebook.com/groups/tcjetpilots), introduce yourself, and show up to a ride.
+There is no membership fee and no sign-up form. Join the [Facebook group](https://www.facebook.com/groups/tcjetpilots), introduce yourself, and show up to a ride.
 
 ---
 
@@ -117,7 +117,7 @@ There's no membership fee and no sign-up form. Join the [Facebook group](https:/
 **Subhead:** Lake City, Minnesota • On the bluffs of Lake Pepin
 
 ### Directions
-Hok-Si-La Park sits on the river side of Highway 61, about a mile north of downtown Lake City. Watch for the brown state park sign with the Hok-Si-La name on it, and the park entrance is right there.
+Hok-Si-La Park is on the river side of Highway 61, about a mile north of downtown Lake City. Watch for the brown park sign at the entrance.
 
 ### Camping Details
 - $30 per person per night, paid at the park office on arrival
@@ -127,7 +127,7 @@ Hok-Si-La Park sits on the river side of Highway 61, about a mile north of downt
 - RV hookups available at nearby parks within a mile
 
 ### Launching
-Most riders beach-cart straight from the campsite to the water. If you're trailering a boat or a larger setup, there's a three-lane public launch half a mile up the road. A sandy swim beach is right at camp for breaks between sessions.
+Most riders beach-cart straight from the campsite to the water. If you are trailering a boat or something bigger, there is a three-lane public launch half a mile up the road. There is also a sandy swim beach right at camp.
 
 ---
 
@@ -138,7 +138,7 @@ Most riders beach-cart straight from the campsite to the water. If you're traile
 **Headline:** READY TO RIDE?
 
 **Body:**
-Whether this is your first Sortie or your twentieth, the invite is the same. Join the Facebook group, mark yourself going on the event, and we'll see you on the bluff in August.
+Everyone is welcome at the Sortie, whether it's your first year or you've been coming for a decade. Join the Facebook group, RSVP on the event, and we will see you in August.
 
 **CTAs:** RSVP NOW | JOIN ON FACEBOOK
 
